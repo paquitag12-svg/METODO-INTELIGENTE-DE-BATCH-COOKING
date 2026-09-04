@@ -1,0 +1,6 @@
+{
+  "name": "Método Inteligente de Batch Cooking",
+  "description": "Página de ventas de alta conversión para el Método Inteligente de Batch Cooking: el sistema práctico para organizar y preparar comidas saludables para toda la familia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
