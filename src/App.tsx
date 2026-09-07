@@ -4,11 +4,9 @@ import { Hero } from './components/Hero';
 import { SixChapters } from './components/SixChapters';
 import { RecipeGallery } from './components/RecipeGallery';
 import { RecipeBannerImage } from './components/RecipeBannerImage';
-import { ChefCarol } from './components/ChefCarol';
 import { Deliverables } from './components/Deliverables';
 import { Bonuses } from './components/Bonuses';
 import { Testimonials } from './components/Testimonials';
-import { ValueAnchor } from './components/ValueAnchor';
 import { OfferPricing } from './components/OfferPricing';
 import { Guarantee } from './components/Guarantee';
 import { FaqSection } from './components/FaqSection';
@@ -70,11 +68,8 @@ export default function App() {
         {/* 6. GALERÍA DE FOTOS DE RECETAS */}
         <RecipeGallery />
 
-        {/* VISTA PREVIA RECETAS ARRIBA DE CHEF CAROL */}
+        {/* VISTA PREVIA RECETAS */}
         <RecipeBannerImage />
-
-        {/* 7. CHEF CAROL */}
-        <ChefCarol />
 
         {/* 8. ENTREGABLES */}
         <Deliverables />
@@ -84,9 +79,6 @@ export default function App() {
 
         {/* 10. TESTIMONIOS */}
         <Testimonials />
-
-        {/* 12. ANCLAJE DE VALOR */}
-        <ValueAnchor />
 
         {/* 13. OFERTA */}
         <OfferPricing onSelectOption={handleSelectPlan} />

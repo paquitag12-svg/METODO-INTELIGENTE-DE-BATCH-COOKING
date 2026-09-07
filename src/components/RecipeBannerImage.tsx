@@ -2,7 +2,7 @@ import React from 'react';
 
 export const RecipeBannerImage: React.FC = () => {
   return (
-    <section id="vista-previa-recetas-banner" className="pt-12 md:pt-16 pb-2 md:pb-4 bg-white relative">
+    <section id="vista-previa-recetas-banner" className="pt-12 md:pt-16 pb-12 md:pb-16 bg-white relative">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         <div
           id="contenedor-foto-recetas-banner"

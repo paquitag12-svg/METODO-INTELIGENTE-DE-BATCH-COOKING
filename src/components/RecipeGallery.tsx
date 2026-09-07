@@ -16,12 +16,12 @@ export const RecipeGallery: React.FC = () => {
           </p>
         </div>
 
-        {/* Recipe Photos Only Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        {/* Recipe Photos Grid: 2 columnas en celular, 3 columnas en PC */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 lg:gap-8">
           {RECIPE_PHOTOS.map((recipe, index) => (
             <div
               key={recipe.placeholderId || index}
-              className="bg-white rounded-3xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 border border-[#073B4C]/10 group"
+              className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 border border-[#073B4C]/10 group"
             >
               {/* Clean Photo without overlays or descriptions */}
               <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
