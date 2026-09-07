@@ -10,14 +10,14 @@ export const RecipeBannerImage: React.FC = () => {
         >
           <img
             id="foto-recetas-banner"
-            src="https://i.imgur.com/cmgfHl6.jpeg"
+            src="https://i.imgur.com/9PQZqYT.jpeg"
             alt="Muestrario de recetas y preparaciones del método Batch Cooking"
             className="w-full h-auto object-contain max-h-[750px] mx-auto block rounded-2xl group-hover:scale-[1.01] transition-transform duration-500"
             loading="lazy"
             referrerPolicy="no-referrer"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              target.src = '/assets/chef-carol-banner.jpg';
+              target.src = '/assets/recetas-banner-imgur.jpg';
             }}
           />
         </div>

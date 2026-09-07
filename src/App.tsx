@@ -37,6 +37,19 @@ export default function App() {
     }
   };
 
+  const scrollToGallery = () => {
+    const galleryElement = document.getElementById('galeria');
+    if (galleryElement) {
+      const navOffset = 70;
+      const elementPosition = galleryElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const handleSelectPlan = (name: string, price: string) => {
     setSelectedPlan({ name, price });
     setIsCheckoutOpen(true);
@@ -45,7 +58,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#F7F5EF] text-[#073B4C] flex flex-col selection:bg-[#2F8F68]/20 selection:text-[#073B4C]">
       {/* Top Notice Header */}
-      <Navbar onCtaClick={scrollToOffer} />
+      <Navbar onGalleryClick={scrollToGallery} onCtaClick={scrollToOffer} />
 
       <main className="flex-1 w-full">
         {/* 1. HERO */}
