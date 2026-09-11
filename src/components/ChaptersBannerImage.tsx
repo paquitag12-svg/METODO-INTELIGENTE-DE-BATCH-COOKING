@@ -11,9 +11,12 @@ export const ChaptersBannerImage: React.FC = () => {
           <img
             id="foto-capitulos-intro"
             src="https://i.imgur.com/2P6miUu.jpeg"
+            width={1175}
+            height={912}
             alt="Muestrario visual del contenido del libro y recetas"
             className="w-full h-auto object-contain max-h-[750px] mx-auto block rounded-2xl group-hover:scale-[1.01] transition-transform duration-500"
             loading="lazy"
+            decoding="async"
             referrerPolicy="no-referrer"
           />
         </div>

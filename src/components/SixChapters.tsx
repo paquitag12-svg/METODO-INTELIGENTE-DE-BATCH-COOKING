@@ -8,13 +8,13 @@ export const SixChapters: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#2F8F68] bg-[#DCEFE5] px-3.5 py-1 rounded-full inline-block mb-3">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#166245] bg-[#DCEFE5] px-3.5 py-1 rounded-full inline-block mb-3">
             Estructura Completa del Libro
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#073B4C] tracking-tight mb-4">
             Un recorrido práctico en 6 etapas
           </h2>
-          <p className="text-base sm:text-lg text-[#073B4C]/75 leading-relaxed">
+          <p className="text-base sm:text-lg text-[#073B4C]/85 leading-relaxed">
             Paso a paso, desde los fundamentos de la congelación hasta menús completos y el uso óptimo de tu asistente culinario:
           </p>
         </div>
@@ -28,10 +28,10 @@ export const SixChapters: React.FC = () => {
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-xs font-black tracking-widest text-[#2F8F68] uppercase bg-white px-3 py-1 rounded-full border border-[#073B4C]/5">
+                  <span className="font-mono text-xs font-black tracking-widest text-[#166245] uppercase bg-white px-3 py-1 rounded-full border border-[#073B4C]/5">
                     {chapter.number}
                   </span>
-                  <span className="text-xs font-semibold text-[#073B4C]/60">
+                  <span className="text-xs font-semibold text-[#073B4C]/80">
                     Etapa {chapter.number}
                   </span>
                 </div>
@@ -40,18 +40,18 @@ export const SixChapters: React.FC = () => {
                   {chapter.title}
                 </h3>
 
-                <p className="text-sm font-bold text-[#2F8F68] mb-3">
+                <p className="text-sm font-bold text-[#166245] mb-3">
                   {chapter.benefit}
                 </p>
 
-                <p className="text-xs sm:text-sm text-[#073B4C]/75 leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#073B4C]/85 leading-relaxed">
                   {chapter.detail}
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-[#073B4C]/10 flex items-center justify-between text-xs text-[#073B4C]/60">
+              <div className="mt-6 pt-4 border-t border-[#073B4C]/10 flex items-center justify-between text-xs text-[#073B4C]/80">
                 <span>Contenido guiado</span>
-                <span className="font-semibold text-[#2F8F68]">100% práctico</span>
+                <span className="font-semibold text-[#166245]">100% práctico</span>
               </div>
             </div>
           ))}
@@ -59,7 +59,7 @@ export const SixChapters: React.FC = () => {
 
         {/* Bottom Note */}
         <div className="mt-12 text-center">
-          <p className="text-xs sm:text-sm text-[#073B4C]/60 font-medium">
+          <p className="text-xs sm:text-sm text-[#073B4C]/80 font-medium">
             Formato digital descargable (PDF de alta resolución) para leer en tu teléfono, tablet, computador o imprimir.
           </p>
         </div>

@@ -11,7 +11,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
       <div className="max-w-[850px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
         
         {/* System Eyebrow in Clean Minimalism style */}
-        <span className="text-xs sm:text-sm font-bold text-[#2F8F68] uppercase tracking-[0.2em] mb-4 inline-block">
+        <span className="text-xs sm:text-sm font-bold text-[#166245] uppercase tracking-[0.2em] mb-4 inline-block">
           ¿Qué voy a cocinar hoy?
         </span>
 
@@ -21,12 +21,12 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-2xl sm:text-3xl font-bold text-[#2F8F68] tracking-tight mb-6">
+        <p className="text-2xl sm:text-3xl font-bold text-[#166245] tracking-tight mb-6">
           Disfruta de más tiempo todo el mes.
         </p>
 
         {/* Main Body Copy */}
-        <div className="text-base sm:text-lg text-[#073B4C]/80 leading-relaxed mb-6 max-w-2xl">
+        <div className="text-base sm:text-lg text-[#073B4C]/85 leading-relaxed mb-6 max-w-2xl">
           <p className="font-semibold text-[#073B4C]">
             Porque cuando tienes un sistema para organizar tus comidas, sabes qué preparar, qué comprar y cuándo cocinar.
           </p>
@@ -36,13 +36,17 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         <div className="w-full max-w-2xl mb-8 overflow-hidden rounded-2xl sm:rounded-3xl border border-[#073B4C]/10 shadow-sm bg-white p-2 sm:p-2.5">
           <img
             src="/hero-batch-cooking.jpg"
+            width={1536}
+            height={1024}
+            fetchPriority="high"
+            loading="eager"
+            decoding="async"
             onError={(e) => {
               (e.target as HTMLImageElement).src = 'https://i.imgur.com/5z4FRWx.jpeg';
             }}
             alt="Método Inteligente de Batch Cooking - Planificación y preparación de comidas"
             className="w-full h-auto rounded-xl sm:rounded-2xl object-cover"
             referrerPolicy="no-referrer"
-            loading="eager"
           />
         </div>
 

@@ -17,7 +17,7 @@ export const FaqSection: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#DCEFE5] text-[#073B4C] text-xs font-bold uppercase tracking-wider mb-3">
-            <HelpCircle className="w-3.5 h-3.5 text-[#2F8F68]" />
+            <HelpCircle className="w-3.5 h-3.5 text-[#166245]" />
             Respuestas Claras
           </div>
 
@@ -25,7 +25,7 @@ export const FaqSection: React.FC = () => {
             Preguntas Frecuentes
           </h2>
 
-          <p className="text-base sm:text-lg text-[#073B4C]/80">
+          <p className="text-base sm:text-lg text-[#073B4C]/85">
             Todo lo que necesitas saber antes de dar el paso hacia una cocina más organizada.
           </p>
         </div>
@@ -48,13 +48,13 @@ export const FaqSection: React.FC = () => {
                   <span className="text-base sm:text-lg font-bold text-[#073B4C] leading-snug">
                     {item.question}
                   </span>
-                  <div className={`w-8 h-8 rounded-full bg-[#F7F5EF] flex items-center justify-center text-[#2F8F68] shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180 bg-[#DCEFE5]' : ''}`}>
+                  <div className={`w-8 h-8 rounded-full bg-[#F7F5EF] flex items-center justify-center text-[#166245] shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180 bg-[#DCEFE5]' : ''}`}>
                     <ChevronDown className="w-4 h-4" />
                   </div>
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#073B4C]/80 leading-relaxed border-t border-[#073B4C]/5">
+                  <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#073B4C]/85 leading-relaxed border-t border-[#073B4C]/5">
                     <p>{item.answer}</p>
                   </div>
                 )}

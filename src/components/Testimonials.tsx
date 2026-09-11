@@ -51,16 +51,16 @@ export const Testimonials: React.FC = () => {
 
               <div className="pt-4 border-t border-[#073B4C]/10 flex items-center justify-between">
                 <div>
-                  <h4 className="text-sm font-black text-[#073B4C]">
+                  <h3 className="text-sm font-black text-[#073B4C]">
                     {testimonio.name}
-                  </h4>
-                  <p className="text-xs text-[#073B4C]/70 flex items-center gap-1 mt-0.5">
-                    <MapPin className="w-3 h-3 text-[#2F8F68]" />
+                  </h3>
+                  <p className="text-xs text-[#073B4C]/80 flex items-center gap-1 mt-0.5">
+                    <MapPin className="w-3 h-3 text-[#166245]" />
                     <span>{testimonio.location}</span>
                   </p>
                 </div>
 
-                <span className="text-[10px] font-bold text-[#2F8F68] bg-[#DCEFE5] px-2 py-0.5 rounded">
+                <span className="text-[10px] font-bold text-[#166245] bg-[#DCEFE5] px-2 py-0.5 rounded">
                   Verificado
                 </span>
               </div>
@@ -70,7 +70,7 @@ export const Testimonials: React.FC = () => {
 
         {/* Disclaimer for Testimonials (CRO & Compliance) */}
         <div className="mt-10 text-center max-w-2xl mx-auto">
-          <p className="text-xs text-[#073B4C]/60 italic leading-relaxed">
+          <p className="text-xs text-[#073B4C]/75 italic leading-relaxed">
             * Los testimonios presentados corresponden a experiencias personales de usuarios. No constituyen una promesa, afirmación médica ni garantía de resultados típicos de pérdida de peso o ahorro. Cada hogar y rutina es diferente.
           </p>
         </div>

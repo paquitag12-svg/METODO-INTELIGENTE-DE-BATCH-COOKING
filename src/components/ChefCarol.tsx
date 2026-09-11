@@ -35,11 +35,11 @@ export const ChefCarol: React.FC = () => {
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-8">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#DCEFE5] text-[#073B4C] text-xs font-bold uppercase mb-3">
-              <Bot className="w-3.5 h-3.5 text-[#2F8F68]" />
+              <Bot className="w-3.5 h-3.5 text-[#166245]" />
               Complemento del Método
             </div>
             
-            <p className="text-sm sm:text-base font-semibold text-[#2F8F68] mb-1">
+            <p className="text-sm sm:text-base font-semibold text-[#166245] mb-1">
               Y cuando necesites una mano…
             </p>
 
@@ -47,7 +47,7 @@ export const ChefCarol: React.FC = () => {
               Puedes contar con Chef Carol.
             </h2>
 
-            <p className="text-sm sm:text-base text-[#073B4C]/80 leading-relaxed">
+            <p className="text-sm sm:text-base text-[#073B4C]/85 leading-relaxed">
               Chef Carol — Agente de IA es un complemento del método que puede ayudarte a generar ideas de comidas, apoyarte en la planificación culinaria y calcular macros y calorías de tus preparaciones.
             </p>
           </div>
@@ -61,14 +61,14 @@ export const ChefCarol: React.FC = () => {
                   key={feat.title}
                   className="bg-white rounded-2xl p-4 sm:p-5 border border-[#073B4C]/5 shadow-xs flex items-start gap-3.5"
                 >
-                  <div className="w-9 h-9 rounded-xl bg-[#DCEFE5] text-[#2F8F68] flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-9 h-9 rounded-xl bg-[#DCEFE5] text-[#166245] flex items-center justify-center shrink-0 mt-0.5">
                     <IconComponent className="w-4 h-4" />
                   </div>
                   <div>
                     <h3 className="text-sm font-bold text-[#073B4C] mb-1">
                       {feat.title}
                     </h3>
-                    <p className="text-xs text-[#073B4C]/75 leading-relaxed">
+                    <p className="text-xs text-[#073B4C]/85 leading-relaxed">
                       {feat.description}
                     </p>
                   </div>
@@ -82,7 +82,7 @@ export const ChefCarol: React.FC = () => {
             <p className="text-sm sm:text-base font-semibold text-[#DCEFE5]">
               "Tú sigues teniendo el control. Chef Carol te ayuda con la parte de pensar y organizar."
             </p>
-            <p className="text-[11px] text-white/60 mt-1">
+            <p className="text-[11px] text-white/80 mt-1">
               Herramienta de asistencia digital culinaria incluida como apoyo complementario.
             </p>
           </div>

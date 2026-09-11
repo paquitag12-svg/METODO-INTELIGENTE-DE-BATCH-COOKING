@@ -11,7 +11,18 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://i.imgur.com" crossorigin>
+    <link rel="dns-prefetch" href="https://i.imgur.com">
+
+    <!-- Preload Hero LCP Image -->
+    <link rel="preload" as="image" href="/hero-batch-cooking.jpg" type="image/jpeg" fetchpriority="high" />
+
+    <!-- Non-render-blocking Google Fonts -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+    </noscript>
   </head>
   <body class="bg-[#F7F5EF] text-[#073B4C] antialiased selection:bg-[#2F8F68]/20 selection:text-[#073B4C]">
     <div id="root"></div>

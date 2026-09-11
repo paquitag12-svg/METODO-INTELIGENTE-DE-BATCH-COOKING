@@ -47,9 +47,12 @@ export const Deliverables: React.FC = () => {
               <div className="my-4 rounded-2xl overflow-hidden border border-[#2F8F68]/20 bg-[#F7F5EF] p-2 sm:p-3 flex items-center justify-center group shadow-xs">
                 <img
                   src="https://i.imgur.com/laxAuvB.jpeg"
+                  width={1024}
+                  height={1024}
                   alt="Entregable 01: Método Inteligente de Batch Cooking"
                   className="w-full h-auto max-h-[280px] sm:max-h-[320px] object-contain rounded-xl transition-transform duration-500 group-hover:scale-[1.02]"
                   loading="lazy"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
@@ -64,21 +67,21 @@ export const Deliverables: React.FC = () => {
 
               <div className="space-y-2.5 pt-2 border-t border-[#073B4C]/10">
                 <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#2F8F68] shrink-0" />
+                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
                   <span>Metodología probada de preparación por lotes</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#2F8F68] shrink-0" />
+                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
                   <span>Guías de almacenamiento en frío y descongelado</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#2F8F68] shrink-0" />
+                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
                   <span>Estrategia de cocina simultánea en una sola sesión</span>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-[#DCEFE5] flex items-center justify-between text-xs font-bold text-[#2F8F68]">
+            <div className="mt-6 pt-4 border-t border-[#DCEFE5] flex items-center justify-between text-xs font-bold text-[#166245]">
               <span>Eje central del producto</span>
               <span className="bg-[#DCEFE5] px-2.5 py-1 rounded-md text-[#073B4C]">Acceso Inmediato</span>
             </div>
@@ -89,10 +92,10 @@ export const Deliverables: React.FC = () => {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#F7F5EF] text-[#073B4C] flex items-center justify-center shrink-0">
-                  <BookOpen className="w-6 h-6 text-[#2F8F68]" />
+                  <BookOpen className="w-6 h-6 text-[#166245]" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold tracking-wider text-[#073B4C]/60 uppercase block">
+                  <span className="text-xs font-bold tracking-wider text-[#073B4C]/70 uppercase block">
                     Entregable 02
                   </span>
                   <h3 className="text-xl sm:text-2xl font-black text-[#073B4C] tracking-tight">
@@ -105,9 +108,12 @@ export const Deliverables: React.FC = () => {
               <div className="my-4 rounded-2xl overflow-hidden border border-[#073B4C]/10 bg-[#F7F5EF] p-2 sm:p-3 flex items-center justify-center group shadow-xs">
                 <img
                   src="https://i.imgur.com/aCLvdm2.jpeg"
+                  width={1024}
+                  height={1024}
                   alt="Entregable 02: Recetas Saludables de Cocina"
                   className="w-full h-auto max-h-[280px] sm:max-h-[320px] object-contain rounded-xl transition-transform duration-500 group-hover:scale-[1.02]"
                   loading="lazy"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
@@ -122,21 +128,21 @@ export const Deliverables: React.FC = () => {
 
               <div className="space-y-2.5 pt-2 border-t border-[#073B4C]/10">
                 <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#2F8F68] shrink-0" />
+                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
                   <span>Platos familiares variados y balanceados</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#2F8F68] shrink-0" />
+                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
                   <span>Ingredientes cotidianos y accesibles</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#2F8F68] shrink-0" />
+                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
                   <span>Optimizadas para conservación en frío</span>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-[#073B4C]/10 flex items-center justify-between text-xs font-semibold text-[#073B4C]/70">
+            <div className="mt-6 pt-4 border-t border-[#073B4C]/10 flex items-center justify-between text-xs font-semibold text-[#073B4C]/80">
               <span>Guía culinaria práctica</span>
               <span className="bg-[#F7F5EF] px-2.5 py-1 rounded-md text-[#073B4C]">Recetario Completo</span>
             </div>
@@ -147,10 +153,10 @@ export const Deliverables: React.FC = () => {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#F7F5EF] text-[#073B4C] flex items-center justify-center shrink-0">
-                  <Bot className="w-6 h-6 text-[#2F8F68]" />
+                  <Bot className="w-6 h-6 text-[#166245]" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold tracking-wider text-[#073B4C]/60 uppercase block">
+                  <span className="text-xs font-bold tracking-wider text-[#073B4C]/70 uppercase block">
                     Entregable 03
                   </span>
                   <h3 className="text-xl sm:text-2xl font-black text-[#073B4C] tracking-tight">
@@ -163,9 +169,12 @@ export const Deliverables: React.FC = () => {
               <div className="my-4 rounded-2xl overflow-hidden border border-[#073B4C]/10 bg-[#F7F5EF] p-2 sm:p-3 flex items-center justify-center group shadow-xs">
                 <img
                   src="https://i.imgur.com/4rMPIki.jpeg"
+                  width={1254}
+                  height={1254}
                   alt="Entregable 03: Chef Carol — Agente de IA"
                   className="w-full h-auto max-h-[280px] sm:max-h-[320px] object-contain rounded-xl transition-transform duration-500 group-hover:scale-[1.02]"
                   loading="lazy"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
@@ -180,26 +189,26 @@ export const Deliverables: React.FC = () => {
 
               <div className="space-y-2.5 pt-2 border-t border-[#073B4C]/10">
                 <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#2F8F68] shrink-0" />
+                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
                   <span>Generador de combinaciones inteligentes</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#2F8F68] shrink-0" />
+                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
                   <span>Cálculo de macros y porciones estimado</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#2F8F68] shrink-0" />
+                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
                   <span>Soporte personalizado en planificación</span>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-[#073B4C]/10 flex items-center justify-between text-xs font-semibold text-[#2F8F68]">
+            <div className="mt-6 pt-4 border-t border-[#073B4C]/10 flex items-center justify-between text-xs font-semibold text-[#166245]">
               <div className="flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Herramienta de asistencia</span>
               </div>
-              <span className="bg-[#DCEFE5] px-2.5 py-1 rounded-md text-[#2F8F68] font-bold">Incluido</span>
+              <span className="bg-[#DCEFE5] px-2.5 py-1 rounded-md text-[#166245] font-bold">Incluido</span>
             </div>
           </div>
 

@@ -50,16 +50,16 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
 
         {/* Modal Header */}
         <div className="text-center mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-[#DCEFE5] text-[#2F8F68] flex items-center justify-center mx-auto mb-3">
+          <div className="w-12 h-12 rounded-2xl bg-[#DCEFE5] text-[#166245] flex items-center justify-center mx-auto mb-3">
             <Lock className="w-6 h-6" />
           </div>
-          <span className="text-xs uppercase font-bold text-[#2F8F68] tracking-wider bg-[#DCEFE5] px-3 py-1 rounded-full">
+          <span className="text-xs uppercase font-bold text-[#166245] tracking-wider bg-[#DCEFE5] px-3 py-1 rounded-full">
             Pasarela de Pago Segura
           </span>
           <h3 className="text-2xl font-black text-[#073B4C] mt-3">
             Preparando tu acceso digital
           </h3>
-          <p className="text-xs sm:text-sm text-[#073B4C]/70 mt-1">
+          <p className="text-xs sm:text-sm text-[#073B4C]/80 mt-1">
             Estás a un paso de comenzar a organizar tus comidas familiares.
           </p>
         </div>
@@ -67,16 +67,16 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         {/* Plan Summary Card */}
         <div className="bg-[#F7F5EF] rounded-2xl p-5 border border-[#073B4C]/10 mb-6">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-bold text-[#073B4C]/70 uppercase">Plan Seleccionado:</span>
-            <span className="text-xs font-bold px-2 py-0.5 bg-[#2F8F68] text-white rounded">Pago único</span>
+            <span className="text-xs font-bold text-[#073B4C]/80 uppercase">Plan Seleccionado:</span>
+            <span className="text-xs font-bold px-2 py-0.5 bg-[#166245] text-white rounded">Pago único</span>
           </div>
           <div className="flex items-baseline justify-between">
             <p className="text-base sm:text-lg font-black text-[#073B4C]">{selectedPlan.name}</p>
-            <p className="text-2xl font-black text-[#2F8F68]">{selectedPlan.price}</p>
+            <p className="text-2xl font-black text-[#166245]">{selectedPlan.price}</p>
           </div>
           
-          <div className="mt-4 pt-3 border-t border-[#073B4C]/10 text-xs text-[#073B4C]/70 flex items-center gap-1.5">
-            <CheckCircle2 className="w-4 h-4 text-[#2F8F68] shrink-0" />
+          <div className="mt-4 pt-3 border-t border-[#073B4C]/10 text-xs text-[#073B4C]/80 flex items-center gap-1.5">
+            <CheckCircle2 className="w-4 h-4 text-[#166245] shrink-0" />
             <span>Acceso digital inmediato tras confirmar la orden.</span>
           </div>
         </div>
@@ -87,7 +87,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
             <span className="font-bold">Enlace de Checkout Configurado:</span>
             <button
               onClick={handleCopyLink}
-              className="inline-flex items-center gap-1 text-[11px] font-bold text-[#2F8F68] hover:underline"
+              className="inline-flex items-center gap-1 text-[11px] font-bold text-[#166245] hover:underline cursor-pointer"
             >
               {copied ? (
                 <>
@@ -129,8 +129,8 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         </a>
 
         {/* Guarantee Badge */}
-        <div className="mt-4 flex items-center justify-center gap-2 text-xs text-[#073B4C]/70">
-          <ShieldCheck className="w-4 h-4 text-[#2F8F68]" />
+        <div className="mt-4 flex items-center justify-center gap-2 text-xs text-[#073B4C]/80">
+          <ShieldCheck className="w-4 h-4 text-[#166245]" />
           <span>Garantía de satisfacción de 7 días [Supuesto]</span>
         </div>
       </div>

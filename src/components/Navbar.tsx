@@ -31,12 +31,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onCtaClick, onGalleryClick }) =>
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-3.5 sm:py-4 flex items-center justify-between gap-4">
         {/* Brand Logo & Name */}
         <div className="flex items-center gap-3">
-          <span className="w-2.5 h-2.5 rounded-full bg-[#2F8F68]" />
-          <span className="text-base sm:text-lg lg:text-xl font-black tracking-tight text-[#2F8F68]">
+          <span className="w-2.5 h-2.5 rounded-full bg-[#166245]" />
+          <span className="text-base sm:text-lg lg:text-xl font-black tracking-tight text-[#166245]">
             MÉTODO INTELIGENTE
           </span>
-          <span className="hidden lg:inline text-[#073B4C]/30 text-sm">|</span>
-          <span className="hidden lg:inline text-xs font-medium text-[#073B4C]/70">
+          <span className="hidden lg:inline text-[#073B4C]/40 text-sm">|</span>
+          <span className="hidden lg:inline text-xs font-medium text-[#073B4C]/80">
             Batch Cooking Familiar
           </span>
         </div>
@@ -44,11 +44,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onCtaClick, onGalleryClick }) =>
         {/* Right side trust & action */}
         <div className="flex items-center gap-2 sm:gap-4">
           <div className="hidden lg:flex items-center gap-1.5 text-xs font-medium text-[#073B4C]/80">
-            <ShieldCheck className="w-4 h-4 text-[#2F8F68]" />
+            <ShieldCheck className="w-4 h-4 text-[#166245]" />
             <span>Garantía de 7 días [Supuesto]</span>
           </div>
 
-          <div className="hidden sm:flex items-center bg-[#DCEFE5] text-[#2F8F68] px-2.5 py-1 rounded-full text-xs font-extrabold tracking-tight">
+          <div className="hidden sm:flex items-center bg-[#DCEFE5] text-[#166245] px-2.5 py-1 rounded-full text-xs font-extrabold tracking-tight">
             Solo $6 USD
           </div>
 

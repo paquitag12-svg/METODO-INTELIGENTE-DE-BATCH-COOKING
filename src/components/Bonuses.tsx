@@ -82,8 +82,11 @@ export const Bonuses: React.FC = () => {
                       <img
                         src={bono.image}
                         alt={bono.title}
+                        width={1024}
+                        height={1024}
                         className="w-full h-auto max-h-[220px] sm:max-h-[260px] object-contain rounded-xl transition-transform duration-500 group-hover:scale-[1.02]"
                         loading="lazy"
+                        decoding="async"
                         referrerPolicy="no-referrer"
                         onError={(e) => {
                           if (bono.localImage) {
@@ -95,18 +98,18 @@ export const Bonuses: React.FC = () => {
                     </div>
                   )}
 
-                  <p className="text-sm font-bold text-[#2F8F68] mb-2.5 leading-relaxed">
+                  <p className="text-sm font-bold text-[#166245] mb-2.5 leading-relaxed">
                     {bono.description}
                   </p>
 
-                  <p className="text-xs sm:text-sm text-[#073B4C]/75 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#073B4C]/80 leading-relaxed">
                     {bono.details}
                   </p>
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-[#073B4C]/10 flex items-center justify-between text-xs font-bold text-[#073B4C]">
                   <span>Incluido en Opción B</span>
-                  <span className="text-[#2F8F68] flex items-center gap-1">
+                  <span className="text-[#166245] flex items-center gap-1">
                     Acceso Total
                   </span>
                 </div>

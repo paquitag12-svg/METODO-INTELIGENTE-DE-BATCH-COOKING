@@ -28,8 +28,11 @@ export const RecipeGallery: React.FC = () => {
                 <img
                   src={recipe.imageUrl}
                   alt={`Receta saludable ${index + 1}`}
+                  width={600}
+                  height={450}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     if (recipe.fallbackUrl) {

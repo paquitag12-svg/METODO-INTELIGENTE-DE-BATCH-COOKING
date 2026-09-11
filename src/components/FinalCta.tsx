@@ -72,9 +72,12 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onCtaClick }) => {
         <div className="mt-10 sm:mt-12 max-w-2xl mx-auto rounded-3xl overflow-hidden border border-white/15 bg-white/5 p-2 sm:p-3 shadow-2xl">
           <img
             src="https://i.imgur.com/IktAZ9k.jpeg"
+            width={890}
+            height={667}
             alt="Batch Cooking - Comidas organizadas para tu familia"
             className="w-full h-auto object-cover rounded-2xl"
             loading="lazy"
+            decoding="async"
             referrerPolicy="no-referrer"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
