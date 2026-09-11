@@ -10,7 +10,7 @@ export const ChaptersBannerImage: React.FC = () => {
         >
           <img
             id="foto-capitulos-intro"
-            src="https://i.imgur.com/2P6miUu.jpeg"
+            src="https://i.imgur.com/l3X2q7M.jpeg"
             width={1175}
             height={912}
             alt="Muestrario visual del contenido del libro y recetas"
