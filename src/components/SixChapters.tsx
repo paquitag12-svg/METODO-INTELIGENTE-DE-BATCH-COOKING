@@ -64,23 +64,6 @@ export const SixChapters: React.FC = () => {
           </p>
         </div>
 
-        {/* Visual Preview Image */}
-        <div className="mt-10 sm:mt-14 max-w-[1050px] mx-auto">
-          <div className="relative rounded-3xl overflow-hidden border border-[#073B4C]/10 shadow-md hover:shadow-xl transition-all duration-300 bg-[#F7F5EF] p-2 sm:p-3 group">
-            <img
-              src="https://i.imgur.com/CZgKIth.jpeg"
-              alt="Muestrario de contenido y recetas del método Batch Cooking"
-              className="w-full h-auto object-contain max-h-[720px] mx-auto block rounded-2xl group-hover:scale-[1.01] transition-transform duration-500"
-              loading="lazy"
-              referrerPolicy="no-referrer"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = '/assets/etapas-preview-new.jpg';
-              }}
-            />
-          </div>
-        </div>
-
       </div>
     </section>
   );

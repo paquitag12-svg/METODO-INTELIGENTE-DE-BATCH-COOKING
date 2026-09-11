@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { SixChapters } from './components/SixChapters';
+import { ChaptersBannerImage } from './components/ChaptersBannerImage';
 import { RecipeGallery } from './components/RecipeGallery';
 import { RecipeBannerImage } from './components/RecipeBannerImage';
 import { Deliverables } from './components/Deliverables';
@@ -61,6 +62,9 @@ export default function App() {
       <main className="flex-1 w-full">
         {/* 1. HERO */}
         <Hero onCtaClick={scrollToOffer} />
+
+        {/* FOTO / VISTA PREVIA ARRIBA DE CAPÍTULOS */}
+        <ChaptersBannerImage />
 
         {/* 2. SEIS ETAPAS */}
         <SixChapters />
