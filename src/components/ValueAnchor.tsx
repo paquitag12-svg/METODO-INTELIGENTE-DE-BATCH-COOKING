@@ -25,15 +25,15 @@ export const ValueAnchor: React.FC = () => {
         </div>
 
         {/* Highlight Banner with exact text */}
-        <div className="inline-block bg-[#073B4C] text-white px-6 py-4 rounded-2xl shadow-lg border border-[#2F8F68]/30">
-          <p className="text-lg sm:text-xl font-black text-[#DCEFE5]">
+        <div className="inline-block bg-[#073B4C] text-white px-7 py-4 rounded-2xl shadow-xl border-2 border-[#166245]">
+          <p className="text-lg sm:text-xl font-black text-[#DCEFE5] tracking-wide">
             La diferencia entre ambas opciones es de solo USD $3.
           </p>
         </div>
 
         {/* Visual cue to table below */}
         <div className="mt-8 flex justify-center">
-          <ArrowDown className="w-6 h-6 text-[#2F8F68] animate-bounce" />
+          <ArrowDown className="w-7 h-7 text-[#166245] animate-bounce" />
         </div>
 
       </div>

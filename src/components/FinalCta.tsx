@@ -55,7 +55,7 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onCtaClick }) => {
           <button
             id="final-cta-btn"
             onClick={onCtaClick}
-            className="w-full sm:w-auto px-10 py-5 bg-[#2F8F68] hover:bg-[#257353] text-white text-lg sm:text-xl font-black rounded-2xl shadow-2xl shadow-[#2F8F68]/40 transition-all duration-200 transform hover:-translate-y-1 active:translate-y-0 flex items-center justify-center gap-3 cursor-pointer group"
+            className="w-full sm:w-auto px-10 py-5 bg-[#134E39] hover:bg-[#0E3B2B] text-white text-lg sm:text-xl font-black rounded-2xl shadow-2xl shadow-black/40 transition-all duration-200 transform hover:-translate-y-1 active:translate-y-0 flex items-center justify-center gap-3 cursor-pointer group border-2 border-[#166245]"
           >
             <span>QUIERO ORGANIZAR MIS COMIDAS AHORA</span>
             <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" />

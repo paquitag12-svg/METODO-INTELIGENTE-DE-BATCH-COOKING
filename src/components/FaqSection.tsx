@@ -37,24 +37,24 @@ export const FaqSection: React.FC = () => {
             return (
               <div
                 key={index}
-                className="bg-white rounded-2xl border border-[#073B4C]/10 shadow-xs overflow-hidden transition-all duration-200"
+                className="bg-white rounded-2xl border-2 border-[#073B4C]/15 shadow-xs overflow-hidden transition-all duration-200 hover:border-[#166245]/30"
               >
                 <button
                   type="button"
                   onClick={() => toggleAccordion(index)}
-                  className="w-full py-5 px-6 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-[#F7F5EF]/50 transition-colors"
+                  className="w-full py-5 px-6 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-[#F7F5EF]/60 transition-colors"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-base sm:text-lg font-bold text-[#073B4C] leading-snug">
+                  <span className="text-base sm:text-lg font-black text-[#073B4C] leading-snug">
                     {item.question}
                   </span>
-                  <div className={`w-8 h-8 rounded-full bg-[#F7F5EF] flex items-center justify-center text-[#166245] shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180 bg-[#DCEFE5]' : ''}`}>
-                    <ChevronDown className="w-4 h-4" />
+                  <div className={`w-8 h-8 rounded-full bg-[#F7F5EF] flex items-center justify-center text-[#134E39] shrink-0 border border-[#073B4C]/10 transition-transform duration-200 ${isOpen ? 'rotate-180 bg-[#DCEFE5] text-[#134E39] border-[#166245]/30' : ''}`}>
+                    <ChevronDown className="w-4 h-4 stroke-[2.5]" />
                   </div>
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#073B4C]/85 leading-relaxed border-t border-[#073B4C]/5">
+                  <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#073B4C]/90 font-medium leading-relaxed border-t border-[#073B4C]/10">
                     <p>{item.answer}</p>
                   </div>
                 )}

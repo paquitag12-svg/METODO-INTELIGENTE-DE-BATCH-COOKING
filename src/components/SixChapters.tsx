@@ -24,14 +24,14 @@ export const SixChapters: React.FC = () => {
           {CHAPTERS.map((chapter) => (
             <div
               key={chapter.number}
-              className="bg-[#F7F5EF] rounded-3xl p-6 sm:p-8 border border-[#073B4C]/10 flex flex-col justify-between hover:border-[#2F8F68]/30 transition-all duration-200"
+              className="bg-[#F7F5EF] rounded-3xl p-6 sm:p-8 border-2 border-[#073B4C]/15 shadow-sm flex flex-col justify-between hover:border-[#166245]/40 hover:shadow-md transition-all duration-200"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-xs font-black tracking-widest text-[#166245] uppercase bg-white px-3 py-1 rounded-full border border-[#073B4C]/5">
+                  <span className="font-mono text-xs font-black tracking-widest text-[#134E39] uppercase bg-white px-3 py-1 rounded-full border border-[#166245]/20 shadow-xs">
                     {chapter.number}
                   </span>
-                  <span className="text-xs font-semibold text-[#073B4C]/80">
+                  <span className="text-xs font-bold text-[#073B4C]">
                     Etapa {chapter.number}
                   </span>
                 </div>
@@ -40,18 +40,18 @@ export const SixChapters: React.FC = () => {
                   {chapter.title}
                 </h3>
 
-                <p className="text-sm font-bold text-[#166245] mb-3">
+                <p className="text-sm font-extrabold text-[#134E39] mb-3">
                   {chapter.benefit}
                 </p>
 
-                <p className="text-xs sm:text-sm text-[#073B4C]/85 leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#073B4C]/90 leading-relaxed font-medium">
                   {chapter.detail}
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-[#073B4C]/10 flex items-center justify-between text-xs text-[#073B4C]/80">
-                <span>Contenido guiado</span>
-                <span className="font-semibold text-[#166245]">100% práctico</span>
+              <div className="mt-6 pt-4 border-t border-[#073B4C]/15 flex items-center justify-between text-xs text-[#073B4C]/85">
+                <span className="font-medium">Contenido guiado</span>
+                <span className="font-extrabold text-[#134E39]">100% práctico</span>
               </div>
             </div>
           ))}

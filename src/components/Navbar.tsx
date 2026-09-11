@@ -54,7 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onCtaClick, onGalleryClick }) =>
 
           <button
             onClick={handleClick}
-            className="px-3.5 sm:px-5 py-2 bg-[#2F8F68] hover:bg-[#257353] text-white text-xs font-bold rounded-full transition-all shadow-xs flex items-center gap-1.5 cursor-pointer group whitespace-nowrap shrink-0"
+            className="px-3.5 sm:px-5 py-2 bg-[#134E39] hover:bg-[#0E3B2B] text-white text-xs font-bold rounded-full transition-all shadow-md shadow-[#134E39]/20 flex items-center gap-1.5 cursor-pointer group whitespace-nowrap shrink-0 border border-[#166245]"
           >
             <span className="hidden sm:inline">QUIERO ORGANIZAR MIS COMIDAS — $6</span>
             <span className="sm:hidden">ORGANIZAR — $6</span>

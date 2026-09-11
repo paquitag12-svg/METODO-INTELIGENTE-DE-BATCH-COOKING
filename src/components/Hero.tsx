@@ -72,7 +72,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           <button
             id="hero-cta-btn"
             onClick={onCtaClick}
-            className="w-full sm:w-auto px-10 py-4 bg-[#2F8F68] hover:bg-[#257353] text-white text-base sm:text-lg font-extrabold rounded-full shadow-md shadow-[#2F8F68]/20 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-3 cursor-pointer group"
+            className="w-full sm:w-auto px-10 py-4 bg-[#134E39] hover:bg-[#0E3B2B] text-white text-base sm:text-lg font-extrabold rounded-full shadow-lg shadow-[#134E39]/30 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-3 cursor-pointer group border border-[#166245]"
           >
             <span>QUIERO ORGANIZAR MIS COMIDAS</span>
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -80,8 +80,8 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         </div>
 
         {/* Guarantee / Security Indicator */}
-        <div className="flex items-center justify-center gap-2 text-xs sm:text-sm font-medium text-[#073B4C]/70">
-          <ShieldCheck className="w-4 h-4 text-[#2F8F68]" />
+        <div className="flex items-center justify-center gap-2 text-xs sm:text-sm font-semibold text-[#073B4C]/85">
+          <ShieldCheck className="w-4 h-4 text-[#166245]" />
           <span>Garantía de satisfacción de 7 días [Supuesto]</span>
         </div>
 

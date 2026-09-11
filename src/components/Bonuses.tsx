@@ -38,12 +38,12 @@ export const Bonuses: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#DCEFE5] text-[#073B4C] text-xs font-bold uppercase tracking-wider mb-3">
-            <Gift className="w-3.5 h-3.5 text-[#2F8F68]" />
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#DCEFE5] text-[#134E39] text-xs font-black uppercase tracking-wider mb-3 border border-[#166245]/20">
+            <Gift className="w-3.5 h-3.5 text-[#166245]" />
             Herramientas Exclusivas de Organización
           </div>
 
-          <p className="text-xl font-bold text-[#2F8F68] mb-2">
+          <p className="text-xl font-extrabold text-[#134E39] mb-2">
             Y además…
           </p>
 
@@ -59,16 +59,16 @@ export const Bonuses: React.FC = () => {
             return (
               <div
                 key={bono.badge}
-                className="bg-[#F7F5EF] rounded-3xl p-6 sm:p-7 border-2 border-[#2F8F68]/30 hover:border-[#2F8F68] shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
+                className="bg-[#F7F5EF] rounded-3xl p-6 sm:p-7 border-2 border-[#166245]/30 hover:border-[#166245] shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-24 h-24 bg-[#DCEFE5]/50 rounded-bl-full pointer-events-none" />
 
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-black tracking-widest px-3 py-1 rounded-full bg-[#073B4C] text-white">
+                    <span className="text-xs font-black tracking-widest px-3.5 py-1 rounded-full bg-[#073B4C] text-white shadow-xs">
                       {bono.badge}
                     </span>
-                    <div className="w-10 h-10 rounded-xl bg-white text-[#2F8F68] flex items-center justify-center shadow-xs group-hover:bg-[#2F8F68] group-hover:text-white transition-colors duration-200">
+                    <div className="w-10 h-10 rounded-xl bg-white text-[#134E39] flex items-center justify-center shadow-xs border border-[#166245]/20 group-hover:bg-[#134E39] group-hover:text-white transition-colors duration-200">
                       <IconComponent className="w-5 h-5" />
                     </div>
                   </div>
@@ -78,7 +78,7 @@ export const Bonuses: React.FC = () => {
                   </h3>
 
                   {bono.image && (
-                    <div className="my-3.5 rounded-2xl overflow-hidden border border-[#2F8F68]/20 bg-white p-2 sm:p-3 flex items-center justify-center shadow-xs">
+                    <div className="my-3.5 rounded-2xl overflow-hidden border border-[#073B4C]/15 bg-white p-2 sm:p-3 flex items-center justify-center shadow-xs">
                       <img
                         src={bono.image}
                         alt={bono.title}
@@ -98,18 +98,18 @@ export const Bonuses: React.FC = () => {
                     </div>
                   )}
 
-                  <p className="text-sm font-bold text-[#166245] mb-2.5 leading-relaxed">
+                  <p className="text-sm font-black text-[#134E39] mb-2.5 leading-relaxed">
                     {bono.description}
                   </p>
 
-                  <p className="text-xs sm:text-sm text-[#073B4C]/80 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#073B4C]/85 leading-relaxed font-medium">
                     {bono.details}
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-[#073B4C]/10 flex items-center justify-between text-xs font-bold text-[#073B4C]">
-                  <span>Incluido en Opción B</span>
-                  <span className="text-[#166245] flex items-center gap-1">
+                <div className="mt-6 pt-4 border-t border-[#073B4C]/15 flex items-center justify-between text-xs font-bold text-[#073B4C]">
+                  <span className="bg-[#DCEFE5] text-[#134E39] px-2.5 py-0.5 rounded-md border border-[#166245]/20">Incluido en Opción B</span>
+                  <span className="text-[#134E39] font-black flex items-center gap-1">
                     Acceso Total
                   </span>
                 </div>

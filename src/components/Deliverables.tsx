@@ -23,18 +23,18 @@ export const Deliverables: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
           
           {/* Deliverable 1: MÉTODO INTELIGENTE */}
-          <div className="bg-white rounded-3xl p-6 sm:p-8 border-2 border-[#2F8F68] shadow-xl relative overflow-hidden flex flex-col justify-between">
-            <div className="absolute top-0 right-0 bg-[#2F8F68] text-white text-xs font-black uppercase px-4 py-1.5 rounded-bl-2xl tracking-wider">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border-2 sm:border-3 border-[#166245] shadow-2xl relative overflow-hidden flex flex-col justify-between ring-4 ring-[#166245]/10">
+            <div className="absolute top-0 right-0 bg-[#134E39] text-white text-xs font-black uppercase px-4 py-1.5 rounded-bl-2xl tracking-wider border-b border-l border-[#166245]">
               SISTEMA PRINCIPAL
             </div>
 
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-[#DCEFE5] text-[#2F8F68] flex items-center justify-center shadow-xs shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-[#DCEFE5] text-[#134E39] flex items-center justify-center shadow-xs shrink-0 border border-[#166245]/20">
                   <ChefHat className="w-6 h-6" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold tracking-wider text-[#2F8F68] uppercase block">
+                  <span className="text-xs font-black tracking-wider text-[#134E39] uppercase block">
                     Entregable 01
                   </span>
                   <h3 className="text-xl sm:text-2xl font-black text-[#073B4C] tracking-tight">
@@ -44,7 +44,7 @@ export const Deliverables: React.FC = () => {
               </div>
 
               {/* Imagen del Entregable 1 */}
-              <div className="my-4 rounded-2xl overflow-hidden border border-[#2F8F68]/20 bg-[#F7F5EF] p-2 sm:p-3 flex items-center justify-center group shadow-xs">
+              <div className="my-4 rounded-2xl overflow-hidden border border-[#166245]/30 bg-[#F7F5EF] p-2 sm:p-3 flex items-center justify-center group shadow-xs">
                 <img
                   src="https://i.imgur.com/laxAuvB.jpeg"
                   width={1024}
@@ -61,41 +61,41 @@ export const Deliverables: React.FC = () => {
                 />
               </div>
 
-              <p className="text-sm sm:text-base text-[#073B4C]/85 leading-relaxed mb-5">
+              <p className="text-sm sm:text-base text-[#073B4C]/90 font-medium leading-relaxed mb-5">
                 El sistema principal para aprender a planificar y preparar comidas por lotes, reduciendo la necesidad de cocinar desde cero todos los días.
               </p>
 
-              <div className="space-y-2.5 pt-2 border-t border-[#073B4C]/10">
-                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
+              <div className="space-y-2.5 pt-2 border-t border-[#073B4C]/15">
+                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-bold">
+                  <Check className="w-4 h-4 text-[#166245] shrink-0 stroke-[3]" />
                   <span>Metodología probada de preparación por lotes</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
+                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-bold">
+                  <Check className="w-4 h-4 text-[#166245] shrink-0 stroke-[3]" />
                   <span>Guías de almacenamiento en frío y descongelado</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
+                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-bold">
+                  <Check className="w-4 h-4 text-[#166245] shrink-0 stroke-[3]" />
                   <span>Estrategia de cocina simultánea en una sola sesión</span>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-[#DCEFE5] flex items-center justify-between text-xs font-bold text-[#166245]">
+            <div className="mt-6 pt-4 border-t border-[#073B4C]/15 flex items-center justify-between text-xs font-black text-[#073B4C]">
               <span>Eje central del producto</span>
-              <span className="bg-[#DCEFE5] px-2.5 py-1 rounded-md text-[#073B4C]">Acceso Inmediato</span>
+              <span className="bg-[#DCEFE5] px-2.5 py-1 rounded-md text-[#134E39] border border-[#166245]/20">Acceso Inmediato</span>
             </div>
           </div>
 
           {/* Deliverable 2: RECETAS SALUDABLES */}
-          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#073B4C]/10 shadow-sm flex flex-col justify-between hover:border-[#2F8F68]/30 transition-all">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border-2 border-[#073B4C]/15 shadow-md flex flex-col justify-between hover:border-[#166245]/40 hover:shadow-xl transition-all">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-[#F7F5EF] text-[#073B4C] flex items-center justify-center shrink-0">
-                  <BookOpen className="w-6 h-6 text-[#166245]" />
+                <div className="w-12 h-12 rounded-2xl bg-[#DCEFE5] text-[#134E39] flex items-center justify-center shrink-0 border border-[#166245]/20">
+                  <BookOpen className="w-6 h-6 text-[#134E39]" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold tracking-wider text-[#073B4C]/70 uppercase block">
+                  <span className="text-xs font-black tracking-wider text-[#073B4C]/80 uppercase block">
                     Entregable 02
                   </span>
                   <h3 className="text-xl sm:text-2xl font-black text-[#073B4C] tracking-tight">
@@ -105,7 +105,7 @@ export const Deliverables: React.FC = () => {
               </div>
 
               {/* Imagen del Entregable 2 */}
-              <div className="my-4 rounded-2xl overflow-hidden border border-[#073B4C]/10 bg-[#F7F5EF] p-2 sm:p-3 flex items-center justify-center group shadow-xs">
+              <div className="my-4 rounded-2xl overflow-hidden border border-[#073B4C]/15 bg-[#F7F5EF] p-2 sm:p-3 flex items-center justify-center group shadow-xs">
                 <img
                   src="https://i.imgur.com/aCLvdm2.jpeg"
                   width={1024}
@@ -122,41 +122,41 @@ export const Deliverables: React.FC = () => {
                 />
               </div>
 
-              <p className="text-sm sm:text-base text-[#073B4C]/85 leading-relaxed mb-5">
+              <p className="text-sm sm:text-base text-[#073B4C]/90 font-medium leading-relaxed mb-5">
                 Recetas estructuradas para preparar comidas variadas, deliciosas y optimizadas para conservación.
               </p>
 
-              <div className="space-y-2.5 pt-2 border-t border-[#073B4C]/10">
-                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
+              <div className="space-y-2.5 pt-2 border-t border-[#073B4C]/15">
+                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-bold">
+                  <Check className="w-4 h-4 text-[#166245] shrink-0 stroke-[3]" />
                   <span>Platos familiares variados y balanceados</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
+                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-bold">
+                  <Check className="w-4 h-4 text-[#166245] shrink-0 stroke-[3]" />
                   <span>Ingredientes cotidianos y accesibles</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
+                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-bold">
+                  <Check className="w-4 h-4 text-[#166245] shrink-0 stroke-[3]" />
                   <span>Optimizadas para conservación en frío</span>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-[#073B4C]/10 flex items-center justify-between text-xs font-semibold text-[#073B4C]/80">
+            <div className="mt-6 pt-4 border-t border-[#073B4C]/15 flex items-center justify-between text-xs font-black text-[#073B4C]">
               <span>Guía culinaria práctica</span>
-              <span className="bg-[#F7F5EF] px-2.5 py-1 rounded-md text-[#073B4C]">Recetario Completo</span>
+              <span className="bg-[#F7F5EF] px-2.5 py-1 rounded-md text-[#073B4C] border border-[#073B4C]/15">Recetario Completo</span>
             </div>
           </div>
 
           {/* Deliverable 3: CHEF CAROL */}
-          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#073B4C]/10 shadow-sm flex flex-col justify-between hover:border-[#2F8F68]/30 transition-all">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border-2 border-[#073B4C]/15 shadow-md flex flex-col justify-between hover:border-[#166245]/40 hover:shadow-xl transition-all">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-[#F7F5EF] text-[#073B4C] flex items-center justify-center shrink-0">
-                  <Bot className="w-6 h-6 text-[#166245]" />
+                <div className="w-12 h-12 rounded-2xl bg-[#DCEFE5] text-[#134E39] flex items-center justify-center shrink-0 border border-[#166245]/20">
+                  <Bot className="w-6 h-6 text-[#134E39]" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold tracking-wider text-[#073B4C]/70 uppercase block">
+                  <span className="text-xs font-black tracking-wider text-[#073B4C]/80 uppercase block">
                     Entregable 03
                   </span>
                   <h3 className="text-xl sm:text-2xl font-black text-[#073B4C] tracking-tight">
@@ -166,7 +166,7 @@ export const Deliverables: React.FC = () => {
               </div>
 
               {/* Imagen del Entregable 3 */}
-              <div className="my-4 rounded-2xl overflow-hidden border border-[#073B4C]/10 bg-[#F7F5EF] p-2 sm:p-3 flex items-center justify-center group shadow-xs">
+              <div className="my-4 rounded-2xl overflow-hidden border border-[#073B4C]/15 bg-[#F7F5EF] p-2 sm:p-3 flex items-center justify-center group shadow-xs">
                 <img
                   src="https://i.imgur.com/4rMPIki.jpeg"
                   width={1254}
@@ -183,32 +183,32 @@ export const Deliverables: React.FC = () => {
                 />
               </div>
 
-              <p className="text-sm sm:text-base text-[#073B4C]/85 leading-relaxed mb-5">
+              <p className="text-sm sm:text-base text-[#073B4C]/90 font-medium leading-relaxed mb-5">
                 Apoyo culinario interactivo para ideas instantáneas, planificación y cálculo de macros y calorías.
               </p>
 
-              <div className="space-y-2.5 pt-2 border-t border-[#073B4C]/10">
-                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
+              <div className="space-y-2.5 pt-2 border-t border-[#073B4C]/15">
+                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-bold">
+                  <Check className="w-4 h-4 text-[#166245] shrink-0 stroke-[3]" />
                   <span>Generador de combinaciones inteligentes</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
+                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-bold">
+                  <Check className="w-4 h-4 text-[#166245] shrink-0 stroke-[3]" />
                   <span>Cálculo de macros y porciones estimado</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-medium">
-                  <Check className="w-4 h-4 text-[#166245] shrink-0" />
+                <div className="flex items-center gap-2 text-sm text-[#073B4C] font-bold">
+                  <Check className="w-4 h-4 text-[#166245] shrink-0 stroke-[3]" />
                   <span>Soporte personalizado en planificación</span>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-[#073B4C]/10 flex items-center justify-between text-xs font-semibold text-[#166245]">
+            <div className="mt-6 pt-4 border-t border-[#073B4C]/15 flex items-center justify-between text-xs font-black text-[#134E39]">
               <div className="flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Herramienta de asistencia</span>
               </div>
-              <span className="bg-[#DCEFE5] px-2.5 py-1 rounded-md text-[#166245] font-bold">Incluido</span>
+              <span className="bg-[#DCEFE5] px-2.5 py-1 rounded-md text-[#134E39] border border-[#166245]/20">Acceso Inmediato</span>
             </div>
           </div>
 
