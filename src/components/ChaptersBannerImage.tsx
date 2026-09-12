@@ -6,7 +6,7 @@ export const ChaptersBannerImage: React.FC = () => {
     'Verduras al wok',
     'Hamburguesas vegetarianas',
     'Postres fit',
-    'Deliciosas las alas',
+    'Deliciosas lasañas',
     'Prácticos wraps',
     'Carne en salsa de champiñones',
   ];
