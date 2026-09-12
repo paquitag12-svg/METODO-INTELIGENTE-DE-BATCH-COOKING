@@ -11,7 +11,7 @@ export const RecipeGallery: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#073B4C] tracking-tight mb-4">
             Mira un adelanto de lo que vas a encontrar.
           </h2>
-          <p className="text-base sm:text-lg text-[#073B4C]/75">
+          <p className="text-base sm:text-lg text-[#118AB2] font-semibold">
             Recetas saludables, prácticas y pensadas para ayudarte a organizar tus comidas.
           </p>
         </div>

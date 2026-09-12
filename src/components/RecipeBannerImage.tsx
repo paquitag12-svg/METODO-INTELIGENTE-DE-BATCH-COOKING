@@ -31,7 +31,7 @@ export const RecipeBannerImage: React.FC = () => {
               ¡Todo lo que necesitas, organización al Toque!
             </h3>
 
-            <p className="text-base sm:text-lg text-[#073B4C]/80 leading-relaxed font-medium">
+            <p className="text-base sm:text-lg text-[#118AB2] leading-relaxed font-semibold">
               Este libro, almuerzos rápidos, snacks para toda la familia y postres para consentirte.
             </p>
           </div>

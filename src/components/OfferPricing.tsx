@@ -18,7 +18,7 @@ export const OfferPricing: React.FC<OfferPricingProps> = ({ onSelectOption }) =>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#073B4C] tracking-tight mb-4">
             Comienza hoy mismo a organizar tu cocina
           </h2>
-          <p className="text-base sm:text-lg text-[#073B4C]/85">
+          <p className="text-base sm:text-lg text-[#118AB2] font-semibold">
             Acceso digital inmediato para ver en tu teléfono, tablet o computador.
           </p>
         </div>

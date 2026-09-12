@@ -21,7 +21,7 @@ export const ChaptersBannerImage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             {/* Texto y contenido */}
             <div className="lg:col-span-7 space-y-5">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#2F8F68]/10 text-[#2F8F68] font-bold text-xs sm:text-sm tracking-wide">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#118AB2]/10 text-[#118AB2] font-bold text-xs sm:text-sm tracking-wide">
                 <Sparkles className="w-4 h-4 text-[#FFD166]" />
                 <span>Método Inteligente: comidas congeladas</span>
               </div>

@@ -14,7 +14,7 @@ export const SixChapters: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#073B4C] tracking-tight mb-4">
             Un recorrido práctico en 6 etapas
           </h2>
-          <p className="text-base sm:text-lg text-[#073B4C]/85 leading-relaxed">
+          <p className="text-base sm:text-lg text-[#118AB2] font-semibold leading-relaxed">
             Paso a paso, desde los fundamentos de la congelación hasta menús completos y el uso óptimo de tu asistente culinario:
           </p>
         </div>
