@@ -41,7 +41,6 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             height={1024}
             fetchPriority="high"
             loading="eager"
-            decoding="async"
             onError={(e) => {
               (e.target as HTMLImageElement).src = '/hero-batch-cooking.jpg';
             }}
