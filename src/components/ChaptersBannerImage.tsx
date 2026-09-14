@@ -55,7 +55,10 @@ export const ChaptersBannerImage: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden border border-[#073B4C]/10 shadow-sm bg-[#F7F5EF] p-2">
                 <img
                   id="foto-capitulos-intro"
-                  src="https://i.imgur.com/z9gMsYF.jpeg"
+                  src="/assets/comidas-congeladas-batch-cooking.webp"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'https://i.imgur.com/asDay2s.webp';
+                  }}
                   width={1097}
                   height={736}
                   alt="Comidas congeladas deliciosas preparadas con el Método Inteligente"
