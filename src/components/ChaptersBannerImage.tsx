@@ -55,9 +55,9 @@ export const ChaptersBannerImage: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden border border-[#073B4C]/10 shadow-sm bg-[#F7F5EF] p-2">
                 <img
                   id="foto-capitulos-intro"
-                  src="/assets/comidas-congeladas-batch-cooking.webp"
+                  src="https://i.imgur.com/JgfeqxE.jpeg"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://i.imgur.com/asDay2s.webp';
+                    (e.target as HTMLImageElement).src = '/assets/etapas-metodo-batch-cooking.jpg';
                   }}
                   width={1097}
                   height={736}
