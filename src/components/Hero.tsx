@@ -25,15 +25,8 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           Disfruta de más tiempo todo el mes.
         </p>
 
-        {/* Main Body Copy */}
-        <div className="text-base sm:text-lg text-[#073B4C]/85 leading-relaxed mb-6 max-w-2xl">
-          <p className="font-semibold text-[#073B4C]">
-            Porque cuando tienes un sistema para organizar tus comidas, sabes qué preparar, qué comprar y cuándo cocinar.
-          </p>
-        </div>
-
         {/* Hero Image */}
-         <div className="w-full max-w-2xl mb-8 overflow-hidden rounded-2xl sm:rounded-3xl border border-[#073B4C]/10 bg-white p-2 sm:p-2.5">
+        <div className="w-full max-w-2xl mb-6 overflow-hidden rounded-2xl sm:rounded-3xl border border-[#073B4C]/10 bg-white p-2 sm:p-2.5">
           <img
             id="foto-hero"
             src="https://i.imgur.com/D4oJOam.jpeg"
@@ -48,6 +41,13 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             className="w-full h-auto rounded-xl sm:rounded-2xl object-cover"
             referrerPolicy="no-referrer"
           />
+        </div>
+
+        {/* Main Body Copy */}
+        <div className="text-base sm:text-lg text-[#073B4C]/85 leading-relaxed mb-6 max-w-2xl">
+          <p className="font-semibold text-[#073B4C]">
+            Porque cuando tienes un sistema para organizar tus comidas, sabes qué preparar, qué comprar y cuándo cocinar.
+          </p>
         </div>
 
         {/* Clean Minimalism Micro Testimonial Card */}
