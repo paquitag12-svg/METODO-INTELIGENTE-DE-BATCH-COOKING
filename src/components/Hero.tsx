@@ -36,13 +36,13 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
          <div className="w-full max-w-2xl mb-8 overflow-hidden rounded-2xl sm:rounded-3xl border border-[#073B4C]/10 bg-white p-2 sm:p-2.5">
           <img
             id="foto-hero"
-            src="https://i.imgur.com/karl0fx.jpeg"
-            width={1536}
-            height={1024}
+            src="https://i.imgur.com/eJ034jM.jpeg"
+            width={900}
+            height={600}
             fetchPriority="high"
             loading="eager"
             onError={(e) => {
-              (e.target as HTMLImageElement).src = '/hero-batch-cooking.jpg';
+              (e.target as HTMLImageElement).src = '/assets/hero-batch-cooking-new.jpg';
             }}
             alt="Método Inteligente de Batch Cooking - Planificación y preparación de comidas"
             className="w-full h-auto rounded-xl sm:rounded-2xl object-cover"
