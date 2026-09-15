@@ -33,7 +33,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         </div>
 
         {/* Hero Image */}
-        <div className="w-full max-w-2xl mb-8 overflow-hidden rounded-2xl sm:rounded-3xl border border-[#073B4C]/10 shadow-sm bg-white p-2 sm:p-2.5">
+         <div className="w-full max-w-2xl mb-8 overflow-hidden rounded-2xl sm:rounded-3xl border border-[#073B4C]/10 bg-white p-2 sm:p-2.5">
           <img
             id="foto-hero"
             src="https://i.imgur.com/karl0fx.jpeg"
