@@ -37,7 +37,7 @@ export const Bonuses: React.FC = () => {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16 text-[17px] leading-[24px]">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#DCEFE5] text-[#134E39] text-xs font-black uppercase tracking-wider mb-3 border border-[#166245]/20">
             <Gift className="w-3.5 h-3.5 text-[#166245]" />
             Herramientas Exclusivas de Organización
