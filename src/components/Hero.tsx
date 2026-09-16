@@ -10,32 +10,22 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
     <section id="hero" className="relative pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden bg-[#F7F5EF] border-b border-[#073B4C]/10">
       <div className="max-w-[850px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
         
-        {/* System Eyebrow in Clean Minimalism style */}
-        <span className="text-xs sm:text-sm font-bold text-[#166245] uppercase tracking-[0.2em] mb-4 inline-block">
-          ¿Qué voy a cocinar hoy?
-        </span>
-
         {/* Headline */}
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#073B4C] leading-[1.02] tracking-tighter mb-4">
-          Organiza tus comidas hoy.
+        <h1 className="text-[28px] font-extrabold text-[#0a3f50] leading-tight tracking-tight mb-4 max-w-3xl">
+          Cocina una vez. Come bien toda la semana.
         </h1>
 
-        {/* Subheadline */}
-        <p className="text-2xl sm:text-3xl font-bold text-[#166245] tracking-tight mb-6">
-          Disfruta de más tiempo todo el mes.
-        </p>
-
         {/* Hero Image */}
-        <div className="w-full max-w-2xl mb-6 overflow-hidden rounded-2xl sm:rounded-3xl border border-[#073B4C]/10 bg-white p-2 sm:p-2.5">
+        <div className="w-full max-w-2xl mb-5 overflow-hidden rounded-2xl sm:rounded-3xl border border-[#073B4C]/10 bg-white p-2 sm:p-2.5">
           <img
             id="foto-hero"
-            src="https://i.imgur.com/D4oJOam.jpeg"
-            width={633}
-            height={422}
+            src="https://i.imgur.com/yPZkCka.jpeg"
+            width={362}
+            height={241}
             fetchPriority="high"
             loading="eager"
             onError={(e) => {
-              (e.target as HTMLImageElement).src = '/assets/hero-batch-cooking-v3.jpg';
+              (e.target as HTMLImageElement).src = '/assets/hero-batch-cooking-v5.jpg';
             }}
             alt="Método Inteligente de Batch Cooking - Planificación y preparación de comidas"
             className="w-full h-auto rounded-xl sm:rounded-2xl object-cover"
@@ -43,12 +33,10 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           />
         </div>
 
-        {/* Main Body Copy */}
-        <div className="text-base sm:text-lg text-[#073B4C]/85 leading-relaxed mb-6 max-w-2xl">
-          <p className="font-semibold text-[#073B4C]">
-            Porque cuando tienes un sistema para organizar tus comidas, sabes qué preparar, qué comprar y cuándo cocinar.
-          </p>
-        </div>
+        {/* Subheadline */}
+        <p className="text-[15px] font-bold text-[#1a627e] tracking-tight mb-8 max-w-2xl">
+          Organiza tus comidas, ahorra tiempo y disfruta de más tranquilidad cada día.
+        </p>
 
         {/* Clean Minimalism Micro Testimonial Card */}
         <div className="w-full max-w-xl mb-8 p-4 sm:p-5 bg-white border border-[#073B4C]/10 rounded-2xl shadow-xs text-left">
