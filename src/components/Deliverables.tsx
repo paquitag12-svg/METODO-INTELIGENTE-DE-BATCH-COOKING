@@ -99,7 +99,7 @@ export const Deliverables: React.FC = () => {
                     Entregable 02
                   </span>
                   <h3 className="text-xl sm:text-2xl font-black text-[#073B4C] tracking-tight">
-                    Recetas Saludables de Cocina
+                    100 Recetas Saludables de Cocina
                   </h3>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export const Deliverables: React.FC = () => {
                   src="https://i.imgur.com/aCLvdm2.jpeg"
                   width={1024}
                   height={1024}
-                  alt="Entregable 02: Recetas Saludables de Cocina"
+                  alt="Entregable 02: 100 Recetas Saludables de Cocina"
                   className="w-full h-auto max-h-[280px] sm:max-h-[320px] object-contain rounded-xl transition-transform duration-500 group-hover:scale-[1.02]"
                   loading="lazy"
                   decoding="async"
@@ -123,7 +123,7 @@ export const Deliverables: React.FC = () => {
               </div>
 
               <p className="text-sm sm:text-base text-[#073B4C]/90 font-medium leading-relaxed mb-5">
-                Recetas estructuradas para preparar comidas variadas, deliciosas y optimizadas para conservación.
+                100 recetas estructuradas para preparar comidas variadas, deliciosas y optimizadas para conservación.
               </p>
 
               <div className="space-y-2.5 pt-2 border-t border-[#073B4C]/15">

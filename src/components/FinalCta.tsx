@@ -21,31 +21,38 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onCtaClick }) => {
         </div>
 
         {/* Headline */}
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mb-4 leading-tight">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mb-6 leading-tight">
           Comidas saludables, organizadas y listas para tu familia.
         </h2>
 
-        {/* Subheadline */}
-        <p className="text-xl sm:text-2xl font-bold text-[#DCEFE5] mb-8">
-          Deja de comenzar desde cero todos los días.
-        </p>
-
-        {/* 4 Pillars Mantra Text */}
-        <div className="max-w-md mx-auto bg-white/5 border border-white/10 rounded-2xl p-6 mb-8 text-center space-y-1.5">
-          <p className="text-lg font-bold text-white tracking-wide">Planifica.</p>
-          <p className="text-lg font-bold text-white tracking-wide">Prepara por lotes.</p>
-          <p className="text-lg font-bold text-white tracking-wide">Organiza.</p>
-          <p className="text-base sm:text-lg font-medium text-[#DCEFE5] pt-2 border-t border-white/10">
-            Y disfruta de la tranquilidad de saber qué vas a comer.
-          </p>
+        {/* Image right below the title */}
+        <div className="mb-8 max-w-2xl mx-auto rounded-3xl overflow-hidden border border-white/15 bg-white/5 p-2 sm:p-3 shadow-2xl">
+          <img
+            id="foto-cta-final"
+            src="https://i.imgur.com/ipjj0BV.jpeg"
+            width={890}
+            height={667}
+            alt="Batch Cooking - Comidas organizadas para tu familia"
+            className="w-full h-auto object-cover rounded-2xl"
+            loading="lazy"
+            decoding="async"
+            referrerPolicy="no-referrer"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = '/assets/cta-final.jpg';
+            }}
+          />
         </div>
 
-        {/* Headline Final */}
-        <div className="mb-10 max-w-xl mx-auto">
+        {/* Mensaje de Cierre / Subheadline Unificado */}
+        <div className="mb-10 max-w-xl mx-auto space-y-3">
+          <p className="text-xl sm:text-2xl font-bold text-[#DCEFE5]">
+            Deja de comenzar desde cero todos los días.
+          </p>
           <p className="text-xl sm:text-2xl font-medium text-white/90 leading-snug">
             Tu cocina no necesita más complicaciones.
           </p>
-          <p className="text-2xl sm:text-3xl font-black text-[#2F8F68] tracking-tight mt-1">
+          <p className="text-2xl sm:text-3xl font-black text-[#2F8F68] tracking-tight">
             Necesita un sistema.
           </p>
         </div>
@@ -66,25 +73,6 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onCtaClick }) => {
             <ShieldCheck className="w-4 h-4 text-[#2F8F68]" />
             <span>Garantía de satisfacción de 7 días [Supuesto]</span>
           </div>
-        </div>
-
-        {/* Image at the end of the section */}
-        <div className="mt-10 sm:mt-12 max-w-2xl mx-auto rounded-3xl overflow-hidden border border-white/15 bg-white/5 p-2 sm:p-3 shadow-2xl">
-          <img
-            id="foto-cta-final"
-            src="https://i.imgur.com/ipjj0BV.jpeg"
-            width={890}
-            height={667}
-            alt="Batch Cooking - Comidas organizadas para tu familia"
-            className="w-full h-auto object-cover rounded-2xl"
-            loading="lazy"
-            decoding="async"
-            referrerPolicy="no-referrer"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.src = '/assets/cta-final.jpg';
-            }}
-          />
         </div>
 
       </div>

@@ -72,7 +72,7 @@ export const OfferPricing: React.FC<OfferPricingProps> = ({ onSelectOption }) =>
                     <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-[#DCEFE5] text-[#166245] flex items-center justify-center shrink-0 mt-0.5">
                       <Check className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 stroke-[3]" />
                     </div>
-                    <span className="text-xs sm:text-sm font-bold text-[#073B4C] leading-snug">Recetas Saludables de Cocina</span>
+                    <span className="text-xs sm:text-sm font-bold text-[#073B4C] leading-snug">100 Recetas Saludables de Cocina</span>
                   </div>
 
                   <div className="flex items-start gap-1.5 sm:gap-3">
@@ -163,7 +163,7 @@ export const OfferPricing: React.FC<OfferPricingProps> = ({ onSelectOption }) =>
                     <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/15 text-white border border-white/20 flex items-center justify-center shrink-0 mt-0.5">
                       <Check className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 stroke-[3]" />
                     </div>
-                    <span className="text-xs sm:text-sm text-white font-semibold leading-snug">Recetas Saludables de Cocina</span>
+                    <span className="text-xs sm:text-sm text-white font-semibold leading-snug">100 Recetas Saludables de Cocina</span>
                   </div>
 
                   <div className="flex items-start gap-1.5 sm:gap-3">
