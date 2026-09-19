@@ -184,7 +184,7 @@ export const Deliverables: React.FC = () => {
               </div>
 
               <p className="text-sm sm:text-base text-[#073B4C]/90 font-medium leading-relaxed mb-5">
-                Apoyo culinario interactivo para ideas instantáneas, planificación y cálculo de macros y calorías.
+                Apoyo culinario interactivo para ideas instantáneas, planificación, porciones y cálculo de calorías y macros.
               </p>
 
               <div className="space-y-2.5 pt-2 border-t border-[#073B4C]/15">
@@ -194,7 +194,7 @@ export const Deliverables: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-[#073B4C] font-bold">
                   <Check className="w-4 h-4 text-[#166245] shrink-0 stroke-[3]" />
-                  <span>Cálculo de macros y porciones estimado</span>
+                  <span>Cálculo de calorías, macros y porciones</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-[#073B4C] font-bold">
                   <Check className="w-4 h-4 text-[#166245] shrink-0 stroke-[3]" />
