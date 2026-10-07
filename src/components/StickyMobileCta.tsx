@@ -9,12 +9,16 @@ export const StickyMobileCta: React.FC<StickyMobileCtaProps> = ({ onCtaClick }) 
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      // Show sticky bar after scrolling past 450px
-      if (window.scrollY > 450) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const shouldShow = window.scrollY > 450;
+          setIsVisible((prev) => (prev !== shouldShow ? shouldShow : prev));
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
@@ -22,10 +26,15 @@ export const StickyMobileCta: React.FC<StickyMobileCtaProps> = ({ onCtaClick }) 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  if (!isVisible) return null;
-
   return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md p-3 border-t-2 border-[#073B4C]/15 shadow-2xl transition-all duration-300">
+    <div
+      aria-hidden={!isVisible}
+      className={`md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md p-3 border-t-2 border-[#073B4C]/15 shadow-2xl transition-all duration-300 ${
+        isVisible
+          ? 'translate-y-0 opacity-100 pointer-events-auto'
+          : 'translate-y-full opacity-0 pointer-events-none'
+      }`}
+    >
       <div className="flex items-center justify-between gap-3 max-w-md mx-auto">
         <div className="flex flex-col">
           <span className="text-[11px] font-extrabold text-[#073B4C] leading-none">

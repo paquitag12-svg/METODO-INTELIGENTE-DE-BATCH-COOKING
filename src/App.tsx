@@ -26,26 +26,14 @@ export default function App() {
   const scrollToOffer = () => {
     const offerElement = document.getElementById('oferta');
     if (offerElement) {
-      const navOffset = 70;
-      const elementPosition = offerElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - navOffset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+      offerElement.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   const scrollToGallery = () => {
     const galleryElement = document.getElementById('galeria');
     if (galleryElement) {
-      const navOffset = 70;
-      const elementPosition = galleryElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - navOffset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+      galleryElement.scrollIntoView({ behavior: 'smooth' });
     }
   };
 

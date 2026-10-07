@@ -15,13 +15,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onCtaClick, onGalleryClick }) =>
     } else {
       const el = document.getElementById('galeria');
       if (el) {
-        const navOffset = 70;
-        const elementPosition = el.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - navOffset;
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth',
-        });
+        el.scrollIntoView({ behavior: 'smooth' });
       }
     }
   };
