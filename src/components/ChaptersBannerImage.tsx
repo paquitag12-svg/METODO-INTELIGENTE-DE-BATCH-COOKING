@@ -31,7 +31,7 @@ export const ChaptersBannerImage: React.FC = () => {
             </h3>
 
             {/* Imagen acompañante redimensionada justo después del título */}
-            <div className="w-full max-w-md overflow-hidden rounded-2xl border border-[#073B4C]/10 shadow-xs bg-[#F7F5EF] p-2">
+            <div className="w-full max-w-md sm:mx-auto overflow-hidden rounded-2xl border border-[#073B4C]/10 shadow-xs bg-[#F7F5EF] p-2">
               <img
                 id="foto-capitulos-intro"
                 src="https://i.imgur.com/tVsAruk.jpeg"
