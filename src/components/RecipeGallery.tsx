@@ -21,26 +21,23 @@ export const RecipeGallery: React.FC = () => {
           {RECIPE_PHOTOS.map((recipe, index) => (
             <div
               key={recipe.placeholderId || index}
-              className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 border border-[#073B4C]/10 group"
+              className="relative aspect-[4/3] bg-stone-100 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 border border-[#073B4C]/10 group"
             >
-              {/* Clean Photo without overlays or descriptions */}
-              <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
-                <img
-                  src={recipe.imageUrl}
-                  alt={`Receta saludable ${index + 1}`}
-                  width={600}
-                  height={450}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  decoding="async"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    if (recipe.fallbackUrl) {
-                      (e.target as HTMLImageElement).src = recipe.fallbackUrl;
-                    }
-                  }}
-                />
-              </div>
+              <img
+                src={recipe.imageUrl}
+                alt={`Receta saludable ${index + 1}`}
+                width={600}
+                height={450}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                decoding="async"
+                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  if (recipe.fallbackUrl) {
+                    (e.target as HTMLImageElement).src = recipe.fallbackUrl;
+                  }
+                }}
+              />
             </div>
           ))}
         </div>
