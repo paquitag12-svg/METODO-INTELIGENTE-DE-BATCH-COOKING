@@ -264,7 +264,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     question: "¿Cuál es la diferencia entre las dos opciones?",
-    answer: "La Opción A (USD $6) incluye el sistema central del Método Inteligente de Batch Cooking, las Recetas Saludables de Cocina y el acceso a Chef Carol — Agente de IA. La Opción B (USD $9) incluye todo lo anterior más los 3 bonos de planificación, organización y menús mensuales.",
+    answer: "La Opción A (USD $5,99) incluye el sistema central del Método Inteligente de Batch Cooking, las Recetas Saludables de Cocina y el acceso a Chef Carol — Agente de IA. La Opción B (USD $8,99) incluye todo lo anterior más los 3 bonos de planificación, organización y menús mensuales.",
   },
   {
     question: "¿Hay garantía?",

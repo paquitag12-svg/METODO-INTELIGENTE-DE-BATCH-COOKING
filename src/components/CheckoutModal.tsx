@@ -21,9 +21,9 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   if (!isOpen) return null;
 
   const checkoutUrlPlaceholder = selectedPlan.checkoutUrl || 
-    (selectedPlan.price.includes('6') 
+    (selectedPlan.price.includes('5,99') || selectedPlan.price.includes('5.99') || selectedPlan.price.includes('6')
       ? 'https://pay.hotmart.com/C107425084U?checkoutMode=10' 
-      : selectedPlan.price.includes('9')
+      : selectedPlan.price.includes('8,99') || selectedPlan.price.includes('8.99') || selectedPlan.price.includes('9')
         ? 'https://pay.hotmart.com/N107179380E?checkoutMode=10'
         : '[CHECKOUT_URL]');
 

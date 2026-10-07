@@ -49,7 +49,7 @@ export const OfferPricing: React.FC<OfferPricingProps> = ({ onSelectOption }) =>
               {/* Price */}
               <div className="mb-4 sm:mb-8 pb-3 sm:pb-6 border-b border-[#073B4C]/15">
                 <div className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-1">
-                  <span className="text-2xl sm:text-4xl lg:text-5xl font-black text-[#073B4C] tracking-tight">USD $6</span>
+                  <span className="text-2xl sm:text-4xl lg:text-5xl font-black text-[#073B4C] tracking-tight">USD $5,99</span>
                   <span className="text-[10px] sm:text-xs text-[#073B4C]/80 font-bold">pago único</span>
                 </div>
               </div>
@@ -164,7 +164,7 @@ export const OfferPricing: React.FC<OfferPricingProps> = ({ onSelectOption }) =>
               {/* Price with Callout */}
               <div className="mb-3 sm:mb-6 pb-3 sm:pb-6 border-b border-white/15">
                 <div className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-2 mb-1.5 sm:mb-2">
-                  <span className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">USD $9</span>
+                  <span className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">USD $8,99</span>
                   <span className="text-[10px] sm:text-xs text-white/80 font-bold">pago único</span>
                 </div>
                 

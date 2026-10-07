@@ -20,8 +20,15 @@ export default function App() {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<{ name: string; price: string }>({
     name: 'Opción B — Método + Organización Completa',
-    price: 'USD $9',
+    price: 'USD $8,99',
   });
+
+  const scrollToInfo = () => {
+    const infoElement = document.getElementById('banner-capitulos-intro') || document.getElementById('capitulos');
+    if (infoElement) {
+      infoElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const scrollToOffer = () => {
     const offerElement = document.getElementById('oferta');
@@ -49,7 +56,7 @@ export default function App() {
 
       <main className="flex-1 w-full">
         {/* 1. HERO */}
-        <Hero onCtaClick={scrollToOffer} />
+        <Hero onCtaClick={scrollToInfo} />
 
         {/* FOTO / VISTA PREVIA ARRIBA DE CAPÍTULOS */}
         <ChaptersBannerImage />
