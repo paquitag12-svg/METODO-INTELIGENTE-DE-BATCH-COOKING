@@ -34,7 +34,7 @@ export const ChaptersBannerImage: React.FC = () => {
             <div className="w-full max-w-md sm:mx-auto overflow-hidden rounded-2xl border border-[#073B4C]/10 shadow-xs bg-[#F7F5EF] p-2">
               <img
                 id="foto-capitulos-intro"
-                src="https://i.imgur.com/tVsAruk.jpeg"
+                src="https://i.imgur.com/bL4Xojh.jpeg"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = '/assets/etapas-metodo-batch-cooking-v2.jpg';
                 }}
