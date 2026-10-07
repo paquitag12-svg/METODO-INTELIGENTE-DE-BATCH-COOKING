@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, ArrowRight, Star, ShieldCheck, Zap } from 'lucide-react';
+import { Check, ArrowRight, Star, ShieldCheck, Zap, X } from 'lucide-react';
 
 interface OfferPricingProps {
   onSelectOption: (optionName: string, price: string) => void;
@@ -80,6 +80,36 @@ export const OfferPricing: React.FC<OfferPricingProps> = ({ onSelectOption }) =>
                       <Check className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 stroke-[3]" />
                     </div>
                     <span className="text-xs sm:text-sm font-bold text-[#073B4C] leading-snug">Chef Carol — Agente de IA</span>
+                  </div>
+                </div>
+
+                {/* Bonos no incluidos en Opción A (Tachados para resaltar la diferencia) */}
+                <div className="pt-2 sm:pt-3 border-t border-[#073B4C]/15">
+                  <p className="text-[10px] sm:text-xs uppercase font-extrabold text-[#073B4C]/50 tracking-wider mb-1.5 sm:mb-2 line-through">
+                    LOS 3 BONOS:
+                  </p>
+
+                  <div className="space-y-1.5 sm:space-y-2.5 opacity-60">
+                    <div className="flex items-start gap-1.5 sm:gap-3 bg-[#F7F5EF]/80 p-1.5 sm:p-2.5 rounded-lg sm:rounded-xl border border-[#073B4C]/10">
+                      <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-[#073B4C]/10 text-[#073B4C]/50 flex items-center justify-center shrink-0 mt-0.5">
+                        <X className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 stroke-[2.5]" />
+                      </div>
+                      <span className="text-xs sm:text-sm text-[#073B4C]/60 font-semibold line-through leading-snug">Sistema de Etiquetado e Inventario</span>
+                    </div>
+
+                    <div className="flex items-start gap-1.5 sm:gap-3 bg-[#F7F5EF]/80 p-1.5 sm:p-2.5 rounded-lg sm:rounded-xl border border-[#073B4C]/10">
+                      <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-[#073B4C]/10 text-[#073B4C]/50 flex items-center justify-center shrink-0 mt-0.5">
+                        <X className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 stroke-[2.5]" />
+                      </div>
+                      <span className="text-xs sm:text-sm text-[#073B4C]/60 font-semibold line-through leading-snug">Calendario Mensual de Planificación</span>
+                    </div>
+
+                    <div className="flex items-start gap-1.5 sm:gap-3 bg-[#F7F5EF]/80 p-1.5 sm:p-2.5 rounded-lg sm:rounded-xl border border-[#073B4C]/10">
+                      <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-[#073B4C]/10 text-[#073B4C]/50 flex items-center justify-center shrink-0 mt-0.5">
+                        <X className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 stroke-[2.5]" />
+                      </div>
+                      <span className="text-xs sm:text-sm text-[#073B4C]/60 font-semibold line-through leading-snug">30 Menús Saludables para Todo el Mes</span>
+                    </div>
                   </div>
                 </div>
               </div>

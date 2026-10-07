@@ -106,7 +106,7 @@ export const RECIPE_PHOTOS: RecipePhoto[] = [
     title: "Pechugas al Limón y Hierbas con Vegetales Asados",
     description: "Preparación por lotes para proteína magra jugosa que mantiene su frescura durante toda la semana.",
     tag: "Aves & Vegetales",
-    imageUrl: "https://i.imgur.com/UXioabC.jpeg",
+    imageUrl: "https://i.imgur.com/L7FmhON.jpeg",
     fallbackUrl: "/assets/gallery-card-1.jpg",
   },
   {
@@ -138,7 +138,7 @@ export const RECIPE_PHOTOS: RecipePhoto[] = [
     title: "Carne Desmechada en Salsa Casera de Tomates Asados",
     description: "Proteína versátil preparada en lote para usar en bowls, tacos saludables o con arroz integral.",
     tag: "Proteínas Versátiles",
-    imageUrl: "https://i.imgur.com/bSD0M4a.jpeg",
+    imageUrl: "https://i.imgur.com/cwktrvc.jpeg",
     fallbackUrl: "/assets/gallery-card-5.jpg",
   },
   {
@@ -185,7 +185,7 @@ export const RECIPE_PHOTOS: RecipePhoto[] = [
     title: "Albóndigas Caseras en Salsa Rústica de Tomate",
     description: "Un clásico reconfortante que conserva su suavidad y textura ideal tras congelar.",
     tag: "Platos Caseros & Salsas",
-    imageUrl: "https://i.imgur.com/95tkmMN.jpeg",
+    imageUrl: "https://i.imgur.com/f3ULffw.jpeg",
     fallbackUrl: "/assets/gallery-card-11.jpg",
   },
   {
@@ -193,7 +193,7 @@ export const RECIPE_PHOTOS: RecipePhoto[] = [
     title: "Snacks y Bocaditos Fit Dulces Porcionados",
     description: "Opciones saludables listas para calmar antojos sin romper tu plan de alimentación.",
     tag: "Snacks & Postres Fit",
-    imageUrl: "https://i.imgur.com/I6ubdnC.jpeg",
+    imageUrl: "https://i.imgur.com/NTM0Wwd.jpeg",
     fallbackUrl: "/assets/gallery-card-12.jpg",
   },
 ];
