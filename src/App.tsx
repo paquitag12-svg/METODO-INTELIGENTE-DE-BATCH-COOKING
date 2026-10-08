@@ -20,7 +20,7 @@ export default function App() {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<{ name: string; price: string }>({
     name: 'Opción B — Método + Organización Completa',
-    price: 'USD $8,99',
+    price: 'USD $9',
   });
 
   const scrollToInfo = () => {
