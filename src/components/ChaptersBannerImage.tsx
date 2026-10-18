@@ -50,7 +50,7 @@ export const ChaptersBannerImage: React.FC = () => {
 
             {/* Texto descriptivo */}
             <p className="text-base sm:text-lg text-[#073B4C]/85 leading-relaxed max-w-3xl">
-              Con los trucos correctos tu comida sale del congelador como si la acabaras de hacer. Las mamás que ya entraron están cocinando por ejemplo:
+              Con los trucos correctos tu comida sale del congelador como si la acabaras de hacer. <strong className="font-bold text-[#073B4C]">Las mamás que ya entraron están cocinando por ejemplo:</strong>
             </p>
 
             {/* Lista destacada de recetas */}
