@@ -11,8 +11,8 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
       <div className="max-w-[850px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
         
         {/* Headline */}
-        <h1 className="text-[28px] font-extrabold text-[#0a3f50] leading-tight tracking-tight mb-4 max-w-3xl">
-          Cocina una vez. Come bien toda la semana.
+        <h1 className="text-[28px] font-extrabold text-[#0d4d62] leading-tight tracking-tight mb-4 max-w-3xl">
+          ¡Cocina una vez. Come bien toda la semana!
         </h1>
 
         {/* Hero Image */}
