@@ -18,8 +18,7 @@
     <!-- Preload Hero LCP Image -->
     <link rel="preload" as="image" href="https://i.imgur.com/yPZkCka.jpeg" type="image/jpeg" fetchpriority="high" />
 
-    <!-- Non-render-blocking Google Fonts -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+    <!-- Non-render-blocking Google Fonts with print trick -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
@@ -38,11 +37,17 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s);
       }
-      if(b.readyState==='complete'||b.readyState==='interactive'){
-        setTimeout(loadPixelScript,0);
+      function schedulePixel(){
+        if('requestIdleCallback' in window){
+          window.requestIdleCallback(loadPixelScript,{timeout:3000});
+        }else{
+          setTimeout(loadPixelScript,1200);
+        }
+      }
+      if(b.readyState==='complete'){
+        schedulePixel();
       }else{
-        b.addEventListener('DOMContentLoaded',loadPixelScript,{once:true});
-        setTimeout(loadPixelScript,2500);
+        window.addEventListener('load',schedulePixel,{once:true});
       }}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '1768291397732224');

@@ -29,6 +29,7 @@ export const StickyMobileCta: React.FC<StickyMobileCtaProps> = ({ onCtaClick }) 
   return (
     <div
       aria-hidden={!isVisible}
+      inert={!isVisible ? true : undefined}
       className={`md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md p-3 border-t-2 border-[#073B4C]/15 shadow-2xl transition-all duration-300 ${
         isVisible
           ? 'translate-y-0 opacity-100 pointer-events-auto'
@@ -48,6 +49,7 @@ export const StickyMobileCta: React.FC<StickyMobileCtaProps> = ({ onCtaClick }) 
 
         <button
           onClick={onCtaClick}
+          tabIndex={isVisible ? 0 : -1}
           className="px-4 py-2.5 bg-[#134E39] hover:bg-[#0E3B2B] text-white text-xs font-black rounded-xl shadow-lg shadow-[#134E39]/30 flex items-center gap-1.5 cursor-pointer whitespace-nowrap active:scale-95 transition-all border border-[#166245]"
         >
           <span>ORGANIZAR COMIDAS</span>
