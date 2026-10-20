@@ -9,7 +9,7 @@ export const Bonuses: React.FC = () => {
       description: "Ayuda a organizar las preparaciones y encontrar rápidamente las comidas disponibles.",
       details: "Plantillas descargables para rotular fechas de cocción, ingredientes y raciones, asegurando que nunca olvides qué tienes guardado.",
       icon: Tag,
-      image: "https://i.imgur.com/dlDqIHQ.jpeg",
+      image: "https://i.imgur.com/qeHIORg.jpeg",
       localImage: "/assets/bono-1.jpg",
     },
     {
@@ -18,7 +18,7 @@ export const Bonuses: React.FC = () => {
       description: "Herramienta para ayudar a organizar las comidas del mes.",
       details: "Estructura visual práctica para coordinar compras semanales, días de preparación y menús familiares sin sobrecargas.",
       icon: CalendarRange,
-      image: "https://i.imgur.com/4ugIzbQ.jpeg",
+      image: "https://i.imgur.com/P4cVAav.jpeg",
       localImage: "/assets/bono-2.jpg",
     },
     {
@@ -27,7 +27,7 @@ export const Bonuses: React.FC = () => {
       description: "Ideas de comidas para ayudar a planificar el mes sin comenzar desde cero.",
       details: "Combinaciones completas balanceadas y testeadas que te ahorran la decisión de qué comer durante 4 semanas seguidas.",
       icon: UtensilsCrossed,
-      image: "https://i.imgur.com/C1gU5o4.jpeg",
+      image: "https://i.imgur.com/d8oUyhb.jpeg",
       localImage: "/assets/bono-3.jpg",
     },
   ];
